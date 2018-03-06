@@ -13,7 +13,8 @@ class Co_owner:
 
 
 # initialization of co-owner
-p1 = Co_owner("MARC", 1375, 720)
-print("{} a une quote-part principale de {} et une secondaire de {}".format(p1.name, p1.quota_share1, p1.quota_share2))
-p2 = Co_owner("LILIAN", 125, 117)
-print("{} a une quote-part principale de {} et une secondaire de {}".format(p2.name, p2.quota_share1, p2.quota_share2))
+name_owner = input("Donnez un nom au coproprietaire ")
+owner_quota = int(input("quote-part principale "))
+owner_quota2 = int(input("quote_part secondaire "))
+owner = Co_owner(name_owner, owner_quota, owner_quota2 )
+print("{} a une quote-part principale de {} et une secondaire de {}".format(owner.name, owner.quota_share1, owner.quota_share2))
